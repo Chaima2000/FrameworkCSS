@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="freamwork.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="toggleAlert" class="toggle-alert">
+<div class="alert alert-danger" id="firstAlert">
+  <label for="toggleAlert">Erreur ! Une erreur est survenue lors du chargement de la page. Cliquez pour afficher plus d'informations.</label>
+</div>
+
+<div class="alert alert-success" id="secondAlert">
+    Succès ! Cette opération a été effectuée avec succès.
+</div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#partie1">Accueil</a></li>
+                <li><a href="#myModal">À propos</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#tab1">Onglet 1</a></li>
+                        <li><a href="#tab2">Onglet 2</a></li>
+                        <li><a href="#tab3">Onglet 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<section class="container partie1">
+    
+    
+    <div>
+        <div>
+        <div class="text-success">image rounde</div>
+        <img src="lune.jpg" alt="image lune" class="img-responsive img-rounded">
+        </div>
+        <button class="btn btn-danger" class="tooltip" title="image rounde" data-placement="top">image rounde</button>
+    </div>
+    <div>
+        
+</section>
+
+<button class="btn btn-primary" data-target="#myModal">Afficher Pop-up </button>
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="popin-dismiss">&times;</span>
+    <div>
+        <h1 class="text-muted">image circle</h1>
+        <img src="lune2.jpg" alt="lune2 Image" class="img-responsive img-circle">
+        </div>
+        <button class="btn btn-success" class="tooltip" title="image circle" data-placement="top">image circle</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+        <div class="row">
+            <div class="col-1">col-1</div>
+            <div class="col-2">col-2</div> 
+            <div class="col-3">col-3</div>
+            <div class="col-4">col-4</div>
+            <div class="col-5">col-5</div>
+        </div>
+    </div>
+  
+<ul class="tab-list" id="services">
+    <li class="tab-item" data-target="#tab1">Onglet 1</li>
+    <li class="tab-item" data-target="#tab2">Onglet 2</li>
+    <li class="tab-item" data-target="#tab3">Onglet 3</li>
+  </ul>
+  
+  
+  <div class="tab-content">
+    <div id="tab1" class="tab-pane active">
+      hello
+    </div>
+    <div id="tab2" class="tab-pane">
+      
+      <div>
+        <div>
+        <h1 class="text-primary">image flou</h1>
+        <img src="nature.jpg" alt="nature Image" class="img-responsive img-blur">
+        </div>
+        <button class="btn btn-primary" class="tooltip" title="image flou" data-placement="top">image flou</button>
+    </div>
+    </div>
+    <div id="tab3" class="tab-pane">
+    
+      <div>
+        <div>
+        <h1 class="text-error">image en bordure</h1>
+        <img src="croissant.jpg" alt="croissant Image" class="img-responsive img-thumbnail">
+        </div>
+        <button class="btn btn-secondary" class="tooltip" title="image en bordure" data-placement="top">image en bordure</button>
+    </div>
+    </div>
+  </div>
+  <hr>
+  <footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Nous contacter</h3>
+                <form>
+                    <input type="text" class="form-control" placeholder="Votre nom">
+                    <input type="email" class="form-control" placeholder="Votre email">
+                    <textarea class="form-control" rows="3" placeholder="Votre message"></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Nos coordonnées</h3>
+                <p>Adresse: 123 Rue de la Rue, Ville, Pays</p>
+                <p>Téléphone: +1234567890</p>
+                <p>Email: contact@example.com</p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+
+</html>
